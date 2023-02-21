@@ -1,0 +1,49 @@
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+
+*{
+    margin:0;
+}
+
+.header{
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    color: $dark-grayish-cyan;
+}
+
+.first-half, .second-half{
+    display: block;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-grayish-cyan;
+}
+
+.container{
+    width: 45em;
+    height:24em;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    background-color: $white;
+    box-sizing: border-box;
+}
+
+.tip-calculate-container{
+    margin: 0 2em;
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    background-color: $very-dark-cyan;
+}
