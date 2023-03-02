@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
+
 <body>
   <div class="wrapper">
-    <h1 class="header">Splitter</h1>
-    <div class="container">
-      <!-- Bill
-  
-      Select Tip %
-      5%
-      10%
-      15%
-      25%
-      50%
-      Custom
-    
-      Number of People -->
-    <div class = "tip-calculate-container">
-      <!-- Tip Amount
-      / person
-    
-      Total
-      / person
-    
-      Reset -->
-    </div>
-   
-    </div>
+    <header>
+      <h1 class="header">Splitter</h1>
+    </header>
+    <main>
+      <section class="container">
+        <article class="bill-container">
+          <form class="bill-info" action="" method="">
+            <div class="bill-msg">
+              <h2 class="subtitle">Bill</h2>
+              <input type="text" id="bill-amount" class="form-input form-icon-dollar" placeholder="0">
+            </div>
+            <h2 class="subtitle pick-amount-title">Select Tip %</h2>
+            <div class="pick-amount">
+              <button class="tip-button">5%</button>
+              <button class="tip-button">10%</button>
+              <button class="tip-button">15%</button>
+              <button class="tip-button">25%</button>
+              <button class="tip-button">50%</button>
+              <input type="text" id="custom-tip" placeholder="Custom" class="custom-tip">
+            </div>
+            <div class="bill-msg">
+              <h2 class="total-people subtitle">Number of People</h2>
+              <input type="text" id="total-peoples" class="form-input form-icon-people" placeholder="0">
+            </div>
+          </form>
+        </article>
+        <aside class="tip-calculate-container">
+          <div class="calculate-price">
+            <div class="tip-per-person">
+              <h3 class="section-heading">Tip Amount</h3>
+              <span class="section-subheading">/ person</span>
+            </div>
+            <p class="price-per-person" id="tip-per-person">$0.00</p>
+            <div class="tip-total-person">
+              <h3 class="section-heading">Total</h3>
+              <span class="section-subheading">/ person</span>
+            </div>
+            <p class="price-total-person" id="tip-total-per-person">$0.00</p>
+          </div>
+          <button type="reset" class="reset-btn" disabled>Reset</button>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor</a>.
+        Coded by <a href="https://github.com/shantanufsd" target="_blank" rel="noopener noreferrer">Shantanu</a>.</p>
+    </footer>
   </div>
- 
-  
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+
   <script src="./js/app.js"></script>
 </body>
+
 </html>
